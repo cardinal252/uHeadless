@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Important: If you're upgrading Umbraco, do not clear the connection
+  string / provider name during your web.config merge.
+-->
+  <connectionStrings>
+      <remove name="umbracoDbDSN" />
+      <add name="umbracoDbDSN" connectionString="server=.;database=umbracoheadless;user id=uHeadless;password=uHeadless" providerName="System.Data.SqlClient" />
+  </connectionStrings>
+
